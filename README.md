@@ -12,7 +12,10 @@ Run ```docker-compose up``` on root folder
 - Then when you save any of them, then grunt automatically generate files inside www/build/css and www/build/js with versioning like main.min.b63069b8.js
 
 ## Tips
-In case you need your CSS and JS files to be in order, you should replace the lines 8 and 14 with your files.
+1. Use the full verion of css and js files, not the minified
+For example:
+Use file1.js and ```NOT``` file1.min.js
+2. In case you need your CSS and JS files to be in order, you should replace the lines 8 and 14 with your files.
 For example:
 ```javascript
 src: [
