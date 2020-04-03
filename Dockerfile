@@ -2,15 +2,12 @@ FROM node:lts
 
 RUN apt-get update -qq && apt-get install -y build-essential
 
-RUN mkdir /src
-
-RUN npm install grunt-cli -g
-
 WORKDIR /src
 
-ADD src/package.json /src/package.json
-RUN npm install
+ADD src/package.json .
+ADD src/Gruntfile.js .
 
-ADD src/Gruntfile.js /src/Gruntfile.js
+RUN npm install grunt-cli -g
+RUN npm install
 
 CMD ["grunt"]

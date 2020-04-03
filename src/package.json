@@ -1,11 +1,12 @@
 {
-  "name": "CSS JS minifier",
+  "name": "minifier",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "Andreas Athanasopoulos",
   "license": "ISC",
   "dependencies": {

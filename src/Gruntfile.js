@@ -67,10 +67,9 @@ module.exports = function(grunt){
             css: {
                 files: ['www/css/*.css'],
                 tasks: [
-                    'concat:css', 'concat:css_home',
-                    'cssmin:css', 'cssmin:css_home',
-                    'assets_versioning:css', 'assets_versioning:css_home',
-                    'string-replace:css', 'string-replace:css_home',
+                    'concat:css',
+                    'cssmin:css',
+                    'assets_versioning:css',
                     'clean:css'
                 ],
             }
